@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'about-comp',
+  name: 'about-view',
   components: {
   }
 }

@@ -1,8 +1,12 @@
 <template>
   <div class="notFound">
     <div class="background"></div>
-    <h1 class="notFound__text">LA PÁGINA SOLICITADA NO EXISTE</h1>
-    <router-link to="/">VOLVER A INICIO</router-link>  
+    <h1 class="notFound__text mt-10">LA PÁGINA SOLICITADA NO EXISTE</h1>
+
+    <v-btn to="/" large outlined class="ma-5">
+      <v-icon class="mr-4">mdi-arrow-left-circle</v-icon>
+      VOLVER A INICIO
+    </v-btn>
   </div>
 </template>
 
@@ -13,6 +17,9 @@ export default {
 </script>
 
 <style scoped>
+  .notFound{
+    text-align: center;
+  }
   .background{
     height: 100vh;
     width: 100%;
@@ -25,5 +32,6 @@ export default {
   }
   .notFound__text{
     font-size: 3rem;
+    margin-top: 1rem;
   }
 </style>
